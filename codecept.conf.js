@@ -6,7 +6,7 @@ exports.config = {
       url: 'https://rms-admin.shuttlstage.com',
       show: true,
       waitForNavigation: 'networkidle0',
-      waitForAction: 500
+      waitForAction: 1500
     }
   },
   include: {
