@@ -1,0 +1,7 @@
+{
+    "name": "MyCodecept00",
+    "dependencies": {
+        "codeceptjs": "^2.1.3",
+        "puppeteer": "^1.17.0"
+    }
+}
