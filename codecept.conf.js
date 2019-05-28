@@ -5,8 +5,11 @@ exports.config = {
     Puppeteer: {
       url: 'https://rms-admin.shuttlstage.com',
       show: true,
-      waitForNavigation: 'networkidle0',
-      waitForAction: 1500
+      waitForNavigation: [ 'domcontentloaded', 'networkidle0' ],
+      waitForAction: 1500,
+      restart: true, //change this to false
+      keepBrowserState: true,
+      keepCookies: true
     }
   },
   include: {
