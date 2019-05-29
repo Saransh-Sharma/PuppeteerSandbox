@@ -1,6 +1,12 @@
-node_modules
-build
-output
-npm-debug.log
+*.png
+*.pdf
+output/*
+!output/.keep
+tmp/
+user-data-dir/
+node_modules/
+*error.log
+lhr_results.html
+test_script.js
 .env
 .DS_Store
