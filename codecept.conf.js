@@ -4,8 +4,14 @@ exports.config = {
   helpers: {
     Puppeteer: {
       url: 'https://rms-admin.shuttlstage.com',
-      show: true,
-      waitForNavigation: 'networkidle0'
+      browser: 'chrome',
+      show: false,
+      waitForNavigation: [ 'domcontentloaded', 'networkidle0' ],
+      waitForAction: 1500,
+      restart: true, //change this to false
+      keepBrowserState: true,
+      keepCookies: true,
+      fullPageScreenshots: true
     }
   },
   include: {
@@ -13,5 +19,14 @@ exports.config = {
   },
   bootstrap: null,
   mocha: {},
+  plugins: {
+    allure: {},
+    retryFailedStep: {
+      enabled: true
+   },
+   screenshotOnFail: {
+    enabled: true
+  }
+},
   name: 'codeceptjs_Sandbox'
 }
