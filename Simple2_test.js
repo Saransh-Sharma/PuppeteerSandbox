@@ -8,7 +8,7 @@ Scenario('other ', (I) => {
     I.see('Route');
   });
 
-  Scenario('this test fails by design ', (I) => {
-    I.amOnPage(url);
-    I.see('dust');
-  });
+//   Scenario('this test fails by design ', (I) => {
+//     I.amOnPage(url);
+//     I.see('dust');
+//   });
